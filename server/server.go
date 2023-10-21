@@ -1,5 +1,5 @@
 package server
 
 func Server(user string) (message string) {
-	return ""
+	return "He did a great job today. Attaboy!"
 }
