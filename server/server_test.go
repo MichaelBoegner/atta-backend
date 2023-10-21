@@ -19,4 +19,5 @@ func TestGetMessage(t *testing.T) {
 			t.Errorf("got %v, but wanted %v", got, want)
 		}
 	})
+	t.Run("get message from test endpoint")
 }
