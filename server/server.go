@@ -1,5 +1,10 @@
-package server
+package main
 
-func Server(user string) (message string) {
-	return "He did a great job today. Attaboy!"
+import (
+	"fmt"
+	"net/http"
+)
+
+func MessageServer(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "He did a great job today. Attaboy!")
 }
